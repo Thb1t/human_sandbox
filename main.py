@@ -25,12 +25,12 @@ offset_y = 0
 # Types de terrain et leurs fichiers d'images
 TERRAIN_TYPES = {
     '.': None,  # Vide (pas de tuile)
-    'G': 'herbe.png',  # Herbe
-    'S': 'sable.png',  # Sable
-    'W': 'eau.png',  # Eau
-    'R': 'roche.png',  # Roche/Terre
-    'T': 'arbre.png',  # Arbre
-    'B': 'bloc.png',  # Bloc (ajouté comme exemple)
+    'G': 'img/herbe.png',  # Herbe
+    'S': 'img/sable.png',  # Sable
+    'W': 'img/eau.png',  # Eau
+    'R': 'img/roche.png',  # Roche/Terre
+    'T': 'img/arbre.png',  # Arbre
+    'B': 'img/bloc.png',  # Bloc (ajouté comme exemple)
 }
 
 
@@ -218,7 +218,7 @@ def create_dummy_carrot():
 
 
 # Charger la carte depuis un fichier
-load_map_from_file("map.txt")
+load_map_from_file("map/map.txt")
 
 # Créer les sprites de tuiles pour chaque type de terrain
 tile_sprites = {}
@@ -234,7 +234,7 @@ target_height = scale // 2.2
 
 # Chargement du sprite villageois
 try:
-    villager_img = pygame.image.load("villagois.png").convert_alpha()
+    villager_img = pygame.image.load("img/villagois.png").convert_alpha()
     w, h = villager_img.get_size()
     v_target_height = scale * 0.6
     v_scale_ratio = v_target_height / h
@@ -248,7 +248,7 @@ except:
 
 # Chargement du sprite coeur pour les particules
 try:
-    heart_img = pygame.image.load("coeur.png").convert_alpha()
+    heart_img = pygame.image.load("img/coeur.png").convert_alpha()
     heart_sprite = pygame.transform.scale(heart_img, (16, 16))  # Petite taille pour les particules
 except:
     print("Image coeur.png non trouvée, utilisation d'un sprite temporaire")
@@ -259,7 +259,7 @@ except:
 
 # Chargement du sprite carotte
 try:
-    carrot_img = pygame.image.load("carrot.png").convert_alpha()
+    carrot_img = pygame.image.load("img/carrot.png").convert_alpha()
     w, h = carrot_img.get_size()
     c_target_height = scale * 0.3
     c_scale_ratio = c_target_height / h
