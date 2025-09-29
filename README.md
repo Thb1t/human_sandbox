@@ -93,7 +93,7 @@ source .venv/bin/activate   # Linux / macOS
 
 pip install pygame
 
-python village.py
+python main.py
 ```
 
 ---
