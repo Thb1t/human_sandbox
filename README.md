@@ -99,8 +99,9 @@ python main.py
 ---
 
 ## 📖 Inspiration / Sources  
-The idea is to have a solid base for natural selection for futur project !  
+The idea is to have a solid base for natural selection for futur project !  😆 100% coded by myself, no tutorials!
 
 I was inspired by the video of [Code BH - J'ai codé une simulation pour comprendre l'égoïsme.](https://www.youtube.com/watch?v=qVOjXQUzOJw)
 
-😆 100% coded by myself, no tutorials!
+
+Code created by me 😎, Thibault GAREL - [Github](https://github.com/Thibault-GAREL)
